@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <div class="title">
+      <h2>Survey Form</h2>
+    </div>
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <form id="surveyForm">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" required>
+    
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" required>
+    
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" required>
+    
+          <label for="country">Country:</label>
+          <select id="country" required>
+            <option value="">Select Country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="ind">India</option>
+            <option value="uk">UK</option>
+            <option value="uae">UAE</option>
+            <option value="rs">Russia</option>
+            <option value="aus">Australia</option>
+           
+          </select>
+    
+          <label>Gender:</label>
+          <input type="checkbox" name="gender" value="male"> Male
+          <input type="checkbox" name="gender" value="female"> Female
+    
+          <label for="profession">Profession:</label>
+          <input type="text" id="profession" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+    
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" required>
+    
+          <button type="submit" onclick="submitForm()">Submit</button>
+          <button type="reset" onclick="resetForm()">Reset</button>
+        </form>
+      </div>
+    
+      <div class="overlay" id="overlay"></div>
+      <div class="popup" id="popup">
+        <h2>Survey Response:</h2>
+        <div class="popup-content" id="popupContent"></div>
+        <button id="closePopup">Close</button>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
